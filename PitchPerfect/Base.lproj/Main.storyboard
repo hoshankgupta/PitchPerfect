@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GMk-dZ-GNo">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GMk-dZ-GNo">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,13 +31,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0S-b2-yWs">
-                                <rect key="frame" x="134" y="427" width="107" height="21"/>
+                                <rect key="frame" x="134" y="413" width="107" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hr8-6f-SvZ">
-                                <rect key="frame" x="155.5" y="473" width="64" height="64"/>
+                                <rect key="frame" x="155" y="433" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="2G2-BJ-rky"/>
                                     <constraint firstAttribute="width" constant="64" id="Vws-Rh-HVz"/>
@@ -49,11 +50,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="hr8-6f-SvZ" firstAttribute="centerX" secondItem="Q0S-b2-yWs" secondAttribute="centerX" id="7GK-TT-330"/>
                             <constraint firstItem="Q0S-b2-yWs" firstAttribute="centerX" secondItem="qeM-3E-JgR" secondAttribute="centerX" id="Ik8-U2-UrE"/>
                             <constraint firstItem="qeM-3E-JgR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RRj-4o-Hdu"/>
-                            <constraint firstItem="hr8-6f-SvZ" firstAttribute="top" secondItem="Q0S-b2-yWs" secondAttribute="bottom" constant="25" id="X9h-GA-Vtr"/>
-                            <constraint firstItem="Q0S-b2-yWs" firstAttribute="top" secondItem="qeM-3E-JgR" secondAttribute="bottom" constant="16" id="hfp-mc-jE8"/>
+                            <constraint firstItem="Q0S-b2-yWs" firstAttribute="top" secondItem="qeM-3E-JgR" secondAttribute="bottom" constant="2" id="knc-vO-Hsd" userLabel="Recording Label.top = Record Button.bottom + 1"/>
+                            <constraint firstItem="hr8-6f-SvZ" firstAttribute="top" secondItem="Q0S-b2-yWs" secondAttribute="bottomMargin" constant="7.5" id="ncQ-nr-xKY"/>
+                            <constraint firstItem="hr8-6f-SvZ" firstAttribute="centerX" secondItem="Q0S-b2-yWs" secondAttribute="centerX" id="s6d-xc-bHq"/>
                             <constraint firstItem="qeM-3E-JgR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tVi-4P-vWw"/>
                         </constraints>
                     </view>
@@ -141,7 +142,7 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UNk-Wf-XDX">
+                                    <stackView opaque="NO" contentMode="center" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UNk-Wf-XDX">
                                         <rect key="frame" x="0.0" y="437.5" width="343" height="145.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lD-r7-SHQ" userLabel="Stop Button">
@@ -176,7 +177,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pIz-UU-Okv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1945" y="139"/>
+            <point key="canvasLocation" x="1944.8" y="138.98050974512745"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="G6Q-tK-tiv">
